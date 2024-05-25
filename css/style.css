@@ -19,6 +19,30 @@ body {
   width: 100%;
 }
 
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+    url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"),
+    url("../fonts/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-Medium.woff2") format("woff2"),
+    url("../fonts/Rubik-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
 body {
   position: relative;
   font-family: "Montserrat", "Arial", sans-serif;
@@ -45,6 +69,25 @@ img {
   object-fit: contain;
   max-width: 100%;
   height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+.button {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  width: 166px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  border-radius: 35px;
+  padding-top: 15px;
+  color: #122659;
+  background-color: #ffd787;
 }
 
 .header {
@@ -97,16 +140,31 @@ img {
   line-height: 22px;
 }
 
+.header__item a {
+  text-decoration: none;
+  color: #122659;
+}
+
 .header__contacts {
   min-width: 192px;
   margin-left: auto;
   margin-right: 4px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.header__contact {
+  text-decoration: none;
+  color: #122659;
 }
 
 .main-block-wrapper {
   display: flex;
   align-items: center;
   position: relative;
+  background-image: url("../images/main-block/photo-boy-background-desktop.png");
+  background-size: cover;
   min-height: 512px;
 }
 
@@ -299,6 +357,14 @@ img {
   margin-right: 0;
 }
 
+.button--blue {
+  background-color: #8dd9e5;
+}
+
+.button--pink {
+  background-color: #feb9cc;
+}
+
 .teachers {
   position: relative;
   display: flex;
@@ -343,6 +409,42 @@ img {
   margin-right: 30px;
 }
 
+.slider {
+  position: relative;
+}
+
+.slider__wrapper {
+  overflow: hidden;
+  width: 100%;
+  margin-left: 15px;
+  margin-right: -15px;
+}
+
+.slider__prev,
+.slider__next {
+  cursor: pointer;
+  position: absolute;
+  user-select: none;
+}
+
+.slider__prev:hover,
+.slider__prev:focus,
+.slider__prev:active,
+.slider__next:hover,
+.slider__next:focus,
+.slider__next:active {
+  opacity: 0.5;
+}
+
+.slider__list {
+  display: flex;
+  width: 100%;
+}
+
+.slider__item {
+  transition: 0.3s ease-in;
+}
+
 .banner {
   position: relative;
   min-height: 453px;
@@ -379,6 +481,24 @@ img {
 .banner__button {
   margin-left: auto;
   margin-right: auto;
+}
+
+.map {
+  overflow: hidden;
+}
+
+.map__wrapper img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.map__wrapper--js {
+  width: 100%;
+  height: 611px;
+}
+
+.map__wrapper--js img {
+  display: none;
 }
 
 .contacts {
