@@ -169,7 +169,7 @@ button {
   position: relative;
   background-image: url("../images/main-block/photo-boy-background-desktop.png");
   background-size: cover;
-  min-height: 512px;
+  min-height: 573px;
 }
 
 .main-block {
@@ -257,7 +257,7 @@ button {
 }
 
 .process__wrapper::before {
-  width: 135px;
+  width: 108px;
   height: 141px;
   background-image: url("../images/process/decorate/decorate-girl.svg");
   background-size: cover;
@@ -410,8 +410,8 @@ button {
 }
 
 .types__item--fourth::before {
-  width: 153px;
-  height: 87px;
+  width: 159px;
+  height: 62px;
   bottom: 11px;
   left: 55px;
   background-image: url("../images/types/decorate/arrow-right-2.svg");
@@ -698,15 +698,6 @@ button {
   user-select: none;
 }
 
-.slider__prev:hover,
-.slider__prev:focus,
-.slider__prev:active,
-.slider__next:hover,
-.slider__next:focus,
-.slider__next:active {
-  opacity: 0.5;
-}
-
 .slider__list {
   display: flex;
   width: 100%;
@@ -720,13 +711,9 @@ button {
   position: relative;
   min-height: 453px;
   margin-top: 121px;
-  padding-bottom: 50px;
-}
-
-.banner svg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+  padding-bottom: 150px;
+  background-image: url("../images/banner/background-banner-desktop.svg");
+  background-size: 100%;
 }
 
 .banner__wrapper {
@@ -804,15 +791,8 @@ button {
 .map__wrapper img {
   object-fit: cover;
   height: 100%;
-}
-
-.map__wrapper--js {
   width: 100%;
   height: 611px;
-}
-
-.map__wrapper--js img {
-  display: none;
 }
 
 .contacts {
@@ -883,6 +863,7 @@ button {
 
 .contacts__social-item {
   margin-right: 15px;
+  list-style-type: none;
 }
 
 .contacts__social-item svg {
